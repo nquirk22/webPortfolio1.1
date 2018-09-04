@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.site {
+  position: relative;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 200;
+  color: #EAD6B6;
+  background-color: #343233;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 225;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 350;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* NAVIGATION_____________
+________________________*/
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  color: #efeae1;
+  font-size: 16px;
+  z-index: 3;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  background: linear-gradient(
+      rgb(44, 42, 43),
+      rgb(44, 42, 43)
+    );
+    opacity: 0;
+  visibility: hidden;
+  transition: all linear .3s;
+  z-index: 3;
+
+}
+
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+}
+
+.top-bar img {
+  z-index: 2;
+}
+
+.menu-button {
+  position: relative;
+  float: right;
+  top: 32%;
+  transform: translateY(-50%);
+  padding-right: 15px;
+  z-index: 2;
+
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.navigation-menu {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
+  border-radius: 20px;
+  border: 2px solid #4e4b4d;
+  padding: 0;
+  align-items: center;
+  /* margin-top: 150px; */
+}
+
+.navigation-menu li {
+  list-style: none;
+  justify-content: center;
+  padding: 2em 1em;
+  font-size: 3vh;
+}
+
+.navigation-menu a {
+  color: #efeae1;
+  text-decoration: none;
+}
+
+.trigger {
+  background-color: transparent;
+  border: none;
+
+}
+
+.logo-trigger {
+  position: absolute;
+  left: 20px;
+  top: 32%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+
+}
+
+.main-area {
+  position: relative;
+  padding: 0;
+  /* perspective: 1px;
+  transform-style: preserve-3d; */
+  /* height: calc(100% - 500px); */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #343233;
+  margin-bottom: 100px;
+}
+
+
+/* INTRO__________________
+________________________*/
+.intro {
+  position: relative;
+  height: 100vh;
+}
+
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  bottom 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(44, 42, 43, 0.75) 98%,
+      rgba(52, 50, 51, 0.98) 99%,
+      rgba(52, 50, 51, 0.99) 99.5%,
+      rgba(52, 50, 51, 1.0) 99.8%
+
+      );
+      z-index: 1;
+}
+
+.intro-image {
+  display: block;
+  position: relative;
+  background: url(../assets/landingBW.jpg);
+  background-position: -60vw bottom;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  height: 100vh;
+  width: 100%;
+  transition: all .3s;
+  overflow-y: hidden;
+}
+
+.intro-copy {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #EFEAE1;
+  background: transparent;
+  z-index: 2;
+
+}
+
+.hello-container {
+  display: inline-block;
+  padding-left: 85px;
+  font-size: 4em;
+  font-weight: 175;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#period {
+  display: inline;
+  opacity: 0;
+  margin-left: -10px;
+}
+
+.greeting {
+  text-align: center;
+  /* background:
+    linear-gradient(
+      rgba(52, 50, 51, 0.03) 0%,
+      rgba(52, 50, 51, 0.09) 5%,
+      rgba(52, 50, 51, 0.2) 9%,
+      rgba(52, 50, 51, 0.3) 15%,
+      rgba(52, 50, 51, 1.0) 17%
+    ); */
+  background: rgba(52, 50, 51);
+}
+
+.greeting-container {
+  padding: 2em 2em 3em 2em;
+}
+
+.greeting h1 {
+
+  margin-top: 0;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.greeting h2 {
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+.greeting-highlight-blue {
+  color: #78B0A0;
+}
+
+.greeting-highlight-yellow {
+  color: #ffd152;
+}
+
+
+/* EDUCATION_______________
+________________________*/
+.education {
+  display: block;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+  background-image:
+    radial-gradient(
+      ellipse closest-side at 50% 50%,
+      #393e44, #36383b 25%, #343233
+    );
+}
+
+.coursework {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+/* SKILLS_________________
+________________________*/
+.skills {
+  text-align: center;
+  padding-top: 4em;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.languages,
+.tools {
+  width: 40%;
+  /* flex-grow: 1; */
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+/* PROJECTS________________
+________________________*/
+.projects {
+  text-align: center;
+  padding: 3em 3em 3em 3em;
+}
+
+/* ABOUT__________________
+________________________*/
+.about {
+  text-align: center;
+  padding: 3em 3em 3em 3em;
+}
+
+.about img {
+  transform: translateX(22%);
+}
+
+/* FOOTER_________________
+________________________*/
+.footer {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+
+  overflow-y: hidden;
+  background-color: #EFEAE1;
+  z-index: -1;
+}
+
+.footer .links {
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer a {
+  color: #574C4F;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* MEDIA QUERIES__________
+________________________*/
+
+@media screen and (min-width: 600px) {
+  /* INTRO__________________
+  ________________________*/
+  .intro-image {
+    background-position: center bottom;
+    background-size: auto 100%;
+  }
+}
+
+/* @media screen and (min-width: 1215px) {
+  .intro-image {
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+} */
+
+@media screen and (min-width: 1600px) {
+  /* INTRO__________________
+  ________________________*/
+  .intro-image {
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+
+  .languages,
+  .tools {
+    width: 20%;
+    /* flex-grow: 1; */
+  }
+}

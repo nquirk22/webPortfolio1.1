@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style2.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jura|Roboto" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="jquery-3.3.1.js"></script>
+    <script src="script.js" defer></script>
+    <title>Nathan Quirk</title>
+  </head>
+
+  <div class="overlay">
+    <nav class="navigation" aria-expanded="false">
+      <ul class="navigation-menu">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <body class="site">
+    <div class="top-bar">
+        <div class="menu-button">
+          <button class="trigger">
+            <img src="assets/menu-icon.svg" alt="Nav Menu"
+              style="width:55px;height:50px;">
+          </button>
+        </div>
+        <div class="logo">
+          <button class="logo-trigger">
+            <a href='#'>
+            <img src="assets/q-logo.svg" alt="quirk logo"
+              style="width:auto;height:40px">
+            </a>
+          </button>
+        </div>
+    </div>
+
+    <!--<<<MAIN>>>-->
+    <main id="content" class="main-area">
+
+      <section class="intro">
+        <div class="intro-overlay"></div>
+        <div class="intro-image">
+        </div>
+        <div class="intro-copy">
+          <div class="hello-container">
+            <span id="hello"></span>
+            <img src="assets/period.svg" style="width:0;height:auto;" id="period">
+            <span id="cursor">|</span>
+          </div>
+        </div>
+      </section><!--end intro-->
+
+      <section class="greeting">
+        <div class="greeting-container">
+          <h1>Nice to meet you.</h1>
+          <h2>I study <span class="greeting-highlight-blue">computer science</span>
+            at West Chester University, and I expect to graduate in May 2019.
+          </h2>
+          <h2>I'm currently looking for
+            <span class="greeting-highlight-yellow">fall internship</span>
+            opportunities.
+          </h2>
+        </div>
+
+      </section>
+
+
+      <a name="education"></a>
+      <!--EDUCATION SECTION-->
+      <section class="education">
+        <div class="education-container">
+          <h1>Education</h1>
+          <div class="header-image">
+            <img src="assets/book.svg" alt="Education" style="width:auto;height:125px;">
+          </div>
+          <div class="school-container" id="wcu">
+            <h2>West Chester University</h2>
+            <h3>B.S. Computer Science</h3>
+            <p>Graduation: May 2019</p>
+            <p>3.9 GPA</p>
+            <h3>Relevant Coursework</h3>
+            <ul class="coursework">
+              <li>Object Oriented Programming</li>
+              <li>Design and Analysis of Algorithms</li>
+              <li>Discrete Mathematics</li>
+              <li>Systems Administration</li>
+              <li>Computer Security</li>
+              <li>Operating Systems</li>
+            </ul>
+          </div>
+          <div class="school-container" id="dccc">
+            <h2>Delaware County Community College</h2>
+            <p>2016 - 2017</p>
+            <p>Dean's List</p>
+            <p>4.0 GPA</p>
+            <h3>Relevant Coursework</h3>
+            <ul class="coursework">
+              <li>Fundamentals of Computer Programming</li>
+              <li>Data Communications and Computer Networking</li>
+              <li>TestOut Network Pro Certified</li>
+          </div>
+        </div>
+      </section><!--end EDUCATION-->
+
+
+
+      <!--SKILLS SECTION-->
+      <a name="skills"></a>
+      <section class="skills">
+        <h1>Skills</h1>
+        <div class="header-image">
+          <img src="assets/laptop.svg" alt="Education" style="width:125px;height:auto;">
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="languages">
+            <h3>Languages</h3>
+            <ul class="languages-list">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="tools">
+            <h3>Tools</h3>
+            <ul class="tools-list">
+              <li>Apache Server</li>
+              <li>VirtualBox</li>
+              <li>git</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
+
+        </div>
+      </section><!-- end SKILLS-->
+
+      <section class="projects"><!--begin Project Cards-->
+        <h1>Projects</h1>
+        <div class="header-image">
+          <img src="assets/project.svg" alt="Projects" style="width:125px;height:auto;">
+        </div>
+
+        <div class="projects-wrapper">
+
+          <div class="projectCard" id="rsync">
+            <h3>Streamlining Rsync</h3>
+            <p>A convenience script for the Linux Rsync utility
+              facilitating easy file updates and transfers
+            </p>
+          </div><!--end rsync-->
+
+          <div class="projectCard" id="ssh">
+            <h3>SSH Security Logger</h3>
+            <p>View failed SSH logins through a remote interface,
+              built with the Django framework and Python
+            </p>
+          </div><!--end ssh-->
+
+          <div class="projectCard" id="reservations">
+            <h3>Reservation System</h3>
+            <p>A restaurant reservation system that provides concurrent access
+              to a database of guest records, reservations,
+              with an intuitive user interface
+              <br />
+              Currently in development
+            </p>
+          </div><!--end reservations-->
+
+        </div>
+      </section><!--end projects-->
+
+
+      <!--ABOUT SECTION-->
+      <section class="about">
+        <a name="about"></a>
+        <h1>About Me</h1>
+        <div class="header-image">
+          <img src="assets/about.svg" alt="About" style="width:125px;height:auto;">
+        </div>
+        <div class="aboutImageLeft"><!--begin Work-->
+
+          <div class="copyRight">
+            <h3>Coach</h3>
+            <p>
+              In the hospitality industry, I led teams to record sales and
+              bookings by turning my passion for learning into training and mentorship
+              programs.
+            </p>
+          </div>
+        </div>
+
+        <div class="aboutImageRight"><!--begin ComputerBuilding-->
+          <div class="copyLeft">
+            <h3>Build</h3>
+            <p>
+              Whether it's a reliable office PC or a frame-crushing battlestation,
+              I love to keep up on hardware trends.
+            </p>
+          </div>
+        </div>
+
+        <div class="aboutImageLeft"><!--begin Travel-->
+
+          <div class="copyRight">
+            <h3>Explore</h3>
+            <p>
+              When I'm not at my computer I hike, trail run, and develop my photography skills.
+            </p>
+          </div>
+        </div>
+
+      </section><!--end about-->
+
+      <!--<<<FOOTER>>>-->
+
+
+    </main> <!--END MAIN-->
+
+    <section class="footer">
+      <div class="links">
+        <ul>
+          <li>
+            <a href="mailto:nquirk22@gmail.com">Email</a>
+          </li>
+          <li>
+            <a target="_blank"
+            href="http://www.linkedin.com/in/nathanquirk">LinkedIn</a>
+          </li>
+          <li>
+            <a target="_blank"
+            href="documents/RESUMEjuly2018F.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </body>
+</html>
