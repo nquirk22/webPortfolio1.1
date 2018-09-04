@@ -340,8 +340,7 @@ ________________________*/
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
-
+  height: 75px;
   overflow-y: hidden;
   background-color: #EFEAE1;
   z-index: -1;
@@ -358,6 +357,15 @@ ________________________*/
 
 .footer li {
   display: inline-block;
+}
+
+.footer li::after {
+    content: "//";
+    color: #C13F21;
+    font-size: 1.5em;
+}
+.footer li:last-child:after {
+    content: "";
 }
 
 .footer a {
@@ -390,7 +398,7 @@ ________________________*/
   ________________________*/
   .intro-image {
     background-position: center bottom;
-    background-size: 100% auto;
+    background-size: cover;
   }
 
   .languages,
