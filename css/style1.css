@@ -197,12 +197,13 @@ ________________________*/
   position: absolute;
   height: 100vh;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  /* right: 0; */
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   color: #EFEAE1;
+  transform: translateX(-50%);
   background: transparent;
   z-index: 2;
 
@@ -210,8 +211,8 @@ ________________________*/
 
 .hello-container {
   display: inline-block;
-  padding-left: 85px;
-  font-size: 4em;
+  /* padding-left: 85px; */
+  font-size: 3em;
   font-weight: 175;
   position: relative;
   top: 50%;
@@ -384,6 +385,10 @@ ________________________*/
     background-position: center bottom;
     background-size: auto 100%;
   }
+
+  .hello-container {
+    font-size: 4em;
+  }
 }
 
 /* @media screen and (min-width: 1215px) {
@@ -399,6 +404,10 @@ ________________________*/
   .intro-image {
     background-position: center bottom;
     background-size: cover;
+  }
+
+  .hello-container {
+    font-size: 4em;
   }
 
   .languages,
